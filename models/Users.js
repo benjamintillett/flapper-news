@@ -32,3 +32,5 @@ UserSchema.methods.generateJWT = function(){
 		exp: parseInt(exp.getTime()/1000)
 	}, 'mySecret');
 };
+
+mongoose.model('User', UserSchema);
